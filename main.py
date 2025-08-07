@@ -20,7 +20,7 @@ b2 = st.number_input("b2", value=0, step=1)
 c2 = st.number_input("c2", value=1, step=1)
 
 # 演算の選択
-operation = st.selectbox("select", ["addition", "subtraction", "multiplication", "division"])
+operation = st.selectbox("select operation", ["addition", "subtraction", "multiplication", "division"])
 
 def add(a,b):
     """
@@ -167,6 +167,10 @@ if st.button("Calculate"):
             if a2 == 0 and b2 == 0:
                 raise ZeroDivisionError(" ")
             result = div([a1,b1,c1],[a2,b2,c2])
+        
+        st.markdown("""
+          answer = (a + TAU * b) / c
+        """)
         st.success(f"a: {result[0]}")
         st.success(f"b: {result[1]}")
         st.success(f"c: {result[2]}")
