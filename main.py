@@ -6,13 +6,13 @@ st.title("calculator")
 TAU=(1+np.sqrt(5))/2.0
 
 st.markdown("""
-val1 = (a1+TAU*b1)/c1
-val2 = (a2+TAU*b2)/c2
-
-val1 + val2
-val1 - val2
-val1 * val2
-val1 / val2
+val1 = (a1+TAU*b1)/c1  
+val2 = (a2+TAU*b2)/c2  
+  
+val1 + val2  
+val1 - val2  
+val1 * val2  
+val1 / val2  
 """)
 
 # 入力フィールド
