@@ -5,20 +5,16 @@ st.title("calculator")
 
 TAU=(1+np.sqrt(5))/2.0
 
-st.markdown("""
-val1 = (a1+TAU*b1)/c1  
-val2 = (a2+TAU*b2)/c2  
-  
-val1 + val2  
-val1 - val2  
-val1 * val2  
-val1 / val2  
-""")
-
 # 入力フィールド
+st.markdown("""
+val1 = (a1 + TAU * b1) / c1
+""")
 a1 = st.number_input("a1", value=0, step=1)
 b1 = st.number_input("b1", value=0, step=1)
 c1 = st.number_input("c1", value=1, step=1)
+st.markdown("""
+val2 = (a2 + TAU * b2) / c2
+""")
 a2 = st.number_input("a2", value=0, step=1)
 b2 = st.number_input("b2", value=0, step=1)
 c2 = st.number_input("c2", value=1, step=1)
