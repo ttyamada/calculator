@@ -160,7 +160,7 @@ if st.button("Calculate"):
         elif operation == "addition":
             result = add([a1,b1,c1],[a2,b2,c2])
         elif operation == "subtraction":
-            result = div([a1,b1,c1],[a2,b2,c2])
+            result = sub([a1,b1,c1],[a2,b2,c2])
         elif operation == "multiplication":
             result = mul([a1,b1,c1],[a2,b2,c2])
         elif operation == "division":
