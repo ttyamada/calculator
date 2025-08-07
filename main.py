@@ -161,6 +161,8 @@ if st.button("Calculate"):
             if a2 == 0 and b2 == 0:
                 raise ZeroDivisionError(" ")
             result = div([a1,b1,c1],[a2,b2,c2])
-        st.success(f"Result: {result}")
+        st.success(f"a: {result[0]}")
+        st.success(f"b: {result[1]}")
+        st.success(f"c: {result[2]}")
     except Exception as e:
         st.error(f"Error: {e}")
