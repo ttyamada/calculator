@@ -20,7 +20,7 @@ b2 = st.number_input("b2", value=0, step=1)
 c2 = st.number_input("c2", value=1, step=1)
 
 # 演算の選択
-operation = st.selectbox("select operation", ["addition", "subtraction", "multiplication", "division"])
+operation = st.selectbox("select operation, val1 {+-*/} val2", ["addition", "subtraction", "multiplication", "division"])
 
 def add(a,b):
     """
